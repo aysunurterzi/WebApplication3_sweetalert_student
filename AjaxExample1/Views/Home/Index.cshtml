@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-2"> </div>
+    <div class="col-md-8">
+        <h2>ÖĞRENCİLER</h2>
+        <div class="row" style="margin-bottom:25px; margin-top: 15px;">
+            <button id="temizle" class="btn btn-group">Tabloyu Temizle</button>
+            <button id="yenile" class="btn btn-success">Yenile</button>
+            <button id="ekle" class="btn btn-default">Ekle</button>
+            
+            <button id="sil" class="btn btn-danger">Sil</button>
+        </div>
+        <table class="table"></table>
+    </div>
+</div>
+<div class="col-md-2"></div>
+
+@section scripts{
+
+    <script src="~/Scripts/Kullanicilar.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Veriler();
+        });
+    </script>
+}
